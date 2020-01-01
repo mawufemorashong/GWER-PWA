@@ -1,43 +1,54 @@
-.report-main{
+.report-main {
     min-height: 80vh;
     padding-top: 3%;
 
-    h4{
+    h4 {
         font-family: sm;
         margin-bottom: 1%;
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
+
     .rlp-card {
         width: 100%;
         height: auto;
         box-shadow: 0 4px 16px rgba(0, 0, 0, .15);
-        padding: 2% 5%;
+        padding:5%;
         border-radius: 20px;
         margin-bottom: 8%;
-    
+
+        ion-badge {
+            font-weight: normal;
+        }
+
+        ion-button {
+            font-size: .7rem;
+            font-family: sm;
+        }
+
         .rlp-top {
             display: flex;
             justify-content: space-between;
-    
+
             h6 {
                 font-family: sm;
-                font-size: 1.1rem;
-                margin-bottom: 1%;
+                font-size: 1.2rem;
+                margin-bottom: 4%;
             }
-    
+
             span {
                 font-size: .8rem;
                 color: #888;
             }
         }
-    
+
         .rlp-bot {
             ul {
                 padding-inline-start: 20px;
-    
+                margin-block-start: .5em;
+                margin-block-end: .5em;
                 li {
                     margin-bottom: 2%;
-    
+
                     p {
                         color: #333;
                         font-size: .95rem;
