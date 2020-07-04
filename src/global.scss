@@ -24,3 +24,48 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+:root {
+    --main-color: #061a5e;
+}
+
+@font-face {
+    font-family: 'sr';
+    src: url('assets/fonts/Sen-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'sb';
+    src: url('assets/fonts/Sen-ExtraBold.ttf');
+}
+
+@font-face {
+    font-family: 'sm';
+    src: url('assets/fonts/Sen-Bold.ttf');
+}
+
+* {
+    font-family: sr;
+}
+
+ion-toolbar {
+    border-bottom: 1px solid #efefef;
+    --background: #061a5e;
+    color: #fff;
+    padding: .5%;
+    border-color: transparent;
+    img {
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+}
+
+ion-header::after {
+    display: none;
+}
+
+ion-title {
+    font-family: sm;
+}
