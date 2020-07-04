@@ -1,15 +1,37 @@
 <ion-app>
   <ion-menu contentId="main-content">
     <ion-content>
-      <ion-list id="inbox-list">
-        <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages; let i = index">
-          <ion-item (click)="selectedIndex = i" routerDirection="root" [routerLink]="[p.url]" lines="none"
-            detail="false" [class.selected]="selectedIndex == i">
-            <ion-icon slot="start" [ios]="p.icon + '-outline'" [md]="p.icon + '-sharp'"></ion-icon>
-            <ion-label>{{ p.title }}</ion-label>
-          </ion-item>
-        </ion-menu-toggle>
-      </ion-list>
+      <div class="menu-top">
+        <img src="../assets/img/banner2.jpg" alt="">
+      </div>
+      <div class="menu-bot">
+        <ion-list>
+          <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages; let i = index">
+            <ion-item (click)="selectedIndex = i" routerDirection="root" [routerLink]="[p.url]" lines="none"
+              detail="false" [class.selected]="selectedIndex == i">
+              <ion-icon slot="start" [ios]="p.icon + '-outline'" [md]="p.icon + '-sharp'"></ion-icon>
+              <ion-label>{{ p.title }}</ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+        </ion-list>
+        <ion-footer>
+          <div class="ion-text-center">
+            <ion-button href="" fill="clear">
+              <ion-icon name="logo-instagram" slot="icon-only"></ion-icon>
+            </ion-button>
+            <ion-button href="" fill="clear">
+              <ion-icon name="logo-twitter" slot="icon-only"></ion-icon>
+            </ion-button>
+            <ion-button href="" fill="clear">
+              <ion-icon name="logo-facebook" slot="icon-only"></ion-icon>
+            </ion-button>
+            <ion-button href="" fill="clear">
+              <ion-icon name="logo-linkedin" slot="icon-only"></ion-icon>
+            </ion-button>
+            <h6 class="ion-no-margin">Powered by DSD</h6>
+          </div>
+        </ion-footer>
+      </div>
     </ion-content>
   </ion-menu>
   <ion-router-outlet id="main-content"></ion-router-outlet>

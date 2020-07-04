@@ -1,9 +1,107 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>contact-us</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center">GWER - Contact Us</ion-title>
+    <ion-buttons slot="end">
+      <img src="../../assets/img/logo.jpg" alt="">
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
-
 <ion-content>
-
+  <div class="home-container">
+    <div class="contact-top">
+      <div class="contact-header">
+        <h4 class="ion-no-margin">
+          Get in Touch
+        </h4>
+        <p class="ion-no-margin">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et neque aut aliquam dignissimos?
+        </p>
+      </div>
+      <ion-row>
+        <ion-col size="4">
+          <div class="ct-card ion-text-center">
+            <div>
+              <ion-icon name="location"></ion-icon>
+              <h5 class="ion-no-margin">Address</h5>
+            </div>
+            <div>
+              <p class="ion-no-margin ion-text-capitalize">korle bu teaching hospital</p>
+              <p class="ion-no-margin ion-text-capitalize">Accra, Ghana</p>
+              <p class="ion-no-margin ion-text-capitalize">GP 3846373</p>
+            </div>
+          </div>
+        </ion-col>
+        <ion-col size="4">
+          <div class="ct-card ion-text-center">
+            <div>
+              <ion-icon name="mail"></ion-icon>
+              <h5 class="ion-no-margin">Call / Email</h5>
+            </div>
+            <div>
+              <p class="ion-no-margin ">(0302)-384-9298</p>
+              <p class="ion-no-margin ">(0302)-384-9298</p>
+              <p class="ion-no-margin ">info@gwerapp.com</p>
+            </div>
+          </div>
+        </ion-col>
+        <ion-col size="4">
+          <div class="ct-card ion-text-center">
+            <div>
+              <ion-icon name="link"></ion-icon>
+              <h5 class="ion-no-margin">Social Media</h5>
+            </div>
+            <div class="ion-text-center">
+              <ion-button href="" fill="clear">
+                <ion-icon name="logo-instagram" slot="icon-only"></ion-icon>
+              </ion-button>
+              <ion-button href="" fill="clear">
+                <ion-icon name="logo-twitter" slot="icon-only"></ion-icon>
+              </ion-button>
+              <ion-button href="" fill="clear">
+                <ion-icon name="logo-facebook" slot="icon-only"></ion-icon>
+              </ion-button>
+              <ion-button href="" fill="clear">
+                <ion-icon name="logo-linkedin" slot="icon-only"></ion-icon>
+              </ion-button>
+            </div>
+          </div>
+        </ion-col>
+      </ion-row>
+    </div>
+    <div class="contact-bot">
+      <div class="contact-header">
+        <h4 class="ion-no-margin">
+          Send us a message
+        </h4>
+        <p class="ion-no-margin">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et neque aut aliquam dignissimos?
+        </p>
+      </div>
+      <div class="cb-form">
+        <ion-row>
+          <ion-col size="6">
+            <ion-input placeholder="Your Name"></ion-input>
+          </ion-col>
+          <ion-col size="6">
+            <ion-input placeholder="Your Email"></ion-input>
+          </ion-col>
+          <ion-col size="12">
+            <ion-textarea rows="5" placeholder="Your Name"></ion-textarea>
+          </ion-col>
+        </ion-row>
+        <div class="ion-text-center">
+          <ion-button color="primary" href="">
+            <ion-icon name="paper-plane" slot="start"></ion-icon>
+            Send Message
+          </ion-button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="main-footer ion-text-center">
+    <h6 class="ion-no-margin">&copy; Copyright 2020, All rights reserved. Powered by DSD</h6>
+  </div>
 </ion-content>
