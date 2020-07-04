@@ -51,7 +51,9 @@
 .home-container {
     padding: 0 10%;
 }
-
+ion-content{
+    scroll-behavior: smooth;
+}
 ion-toolbar {
     border-bottom: 1px solid #efefef;
     --background: #061a5e;

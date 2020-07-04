@@ -24,7 +24,7 @@ const routes: Routes = [
     loadChildren: () => import('./volume-list/volume-list.module').then( m => m.VolumeListPageModule)
   },
   {
-    path: 'report-main',
+    path: 'all-reports',
     loadChildren: () => import('./report-main/report-main.module').then( m => m.ReportMainPageModule)
   },
   {

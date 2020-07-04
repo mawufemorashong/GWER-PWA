@@ -24,7 +24,7 @@ export class AppComponent implements OnInit {
     },
     {
       title: 'Latest Releases',
-      url: 'report-volumes',
+      url: 'all-reports',
       icon: 'newspaper'
     },
     {
