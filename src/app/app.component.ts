@@ -7,7 +7,7 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html',
-  styleUrls: ['app.component.scss']
+  styleUrls: ['app.component.scss'],
 })
 export class AppComponent implements OnInit {
   public selectedIndex = 0;
@@ -15,37 +15,37 @@ export class AppComponent implements OnInit {
     {
       title: 'Home',
       url: 'home',
-      icon: 'home'
+      icon: 'home',
     },
     {
       title: 'About Us',
       url: 'about-us',
-      icon: 'business'
+      icon: 'business',
     },
     {
       title: 'Latest Releases',
       url: 'all-reports',
-      icon: 'newspaper'
+      icon: 'newspaper',
     },
     {
       title: 'Editoral Policy',
-      url: '/folder/Outbox',
-      icon: 'information-circle'
+      url: 'editorial-policy',
+      icon: 'information-circle',
     },
     {
       title: 'Guideline for Authors',
-      url: '/folder/Outbox',
-      icon: 'reader'
+      url: 'guidelines-for-author',
+      icon: 'reader',
     },
     {
       title: 'Contact Us',
       url: 'contact-us',
-      icon: 'paper-plane'
+      icon: 'paper-plane',
     },
     {
       title: 'Share',
       url: '/folder/Outbox',
-      icon: 'share-social'
+      icon: 'share-social',
     },
   ];
 
@@ -65,15 +65,14 @@ export class AppComponent implements OnInit {
     });
   }
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
   public changeTheme() {
-    let systemDark = window.matchMedia("(prefers-color-scheme: dark)");
+    const systemDark = window.matchMedia('(prefers-color-scheme: dark)');
     systemDark.addListener(this.colorTest);
     document.body.setAttribute('data-theme', 'light');
   }
-  
+
   public colorTest(systemInitiatedDark) {
     document.body.setAttribute('data-theme', 'light');
   }

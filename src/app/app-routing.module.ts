@@ -28,9 +28,18 @@ const routes: Routes = [
     loadChildren: () => import('./report-main/report-main.module').then( m => m.ReportMainPageModule)
   },
   {
-    path: 'report-volumes',
+    path: 'report-view',
     loadChildren: () => import('./report-volumes/report-volumes.module').then( m => m.ReportVolumesPageModule)
+  },
+  {
+    path: 'editorial-policy',
+    loadChildren: () => import('./policy/policy.module').then( m => m.PolicyPageModule)
+  },
+  {
+    path: 'guidelines-for-author',
+    loadChildren: () => import('./guidelines/guidelines.module').then( m => m.GuidelinesPageModule)
   }
+
 ];
 
 @NgModule({
